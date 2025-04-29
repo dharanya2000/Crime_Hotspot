@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crime Hotspot Map</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/index.js') }}" defer></script>
+</head>
+<body>
+    <h1>Crime Hotspot Map Generated!</h1>
+    <iframe src="{{ url_for('static', filename='crime_hotspots.html') }}" width="100%" height="600px"></iframe>
+    <br>
+    <a href="/">Upload Another File</a>
+    <button id="scrollToTop">↑</button>
+</body>
+</html>
